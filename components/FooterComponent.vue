@@ -12,7 +12,7 @@
                     <nuxt-link v-for="item in productList"
                                :key="item.id"
                                tag="li"
-                               :to="'product/' + item.id">
+                               :to="{name: 'productDetail',query: { id: item.id }}">
                       <a href="#">{{item.h2}}</a>
                     </nuxt-link>
                   </ul>
@@ -21,14 +21,14 @@
             </div>
             <div class="footer_widget footer_widget_about">
               <div class="footer_widget_about_logo">
-                <img src="../static/images/logo.png" />
+                <img src="~/assets/images/logo.png" />
               </div>
               <div class="footer_widget_about_container">
                 <p class="footer_widget_text"
                    v-for="item in aboutList"
                    :key="item.id">
                   <img height="32"
-                       :src="require('~/static/images/services' + item.id + '.png')">
+                       :src="require('~/assets/images/services' + item.id + '.png')">
                   {{item.p}}
                 </p>
                 <div class="footer_widget_about_container_QRcode">
@@ -36,7 +36,7 @@
                        v-for="item in QRcodeList"
                        :key="item.id">
                     <img height="32"
-                         :src="require('~/static/images/QRcode' + item.id + '.jpg')">
+                         :src="require('~/assets/images/QRcode' + item.id + '.jpg')">
                     <p class="footer_widget_text">{{item.p}}
                     </p>
                   </div>
@@ -59,7 +59,7 @@
                   class="scroll-to-target site_footer_scroll_top"
                   @click="scrollToTop()">
               <img height="24"
-                   src="../static/images/up.png" />
+                   src="../assets/images/up.png" />
             </span>
             <p class="site_footer_copy">&copy; Copyright 2020 无锡玻尔金属门窗工程有限公司
             </p>
@@ -67,7 +67,7 @@
               <a href="https://beian.miit.gov.cn/"
                  target="_blank">
                 <img height="12"
-                     src="../static/images/beian.png" /> 苏ICP备2020053658号-1</a>
+                     src="../assets/images/beian.png" /> 苏ICP备2020053658号-1</a>
             </p>
             <p class="site_footer_copy">
               <a href="http://www.beian.gov.cn/portal/recordQuery"

@@ -22,7 +22,7 @@ export default {
 <style scoped>
 .container_box_wuxibohr:before {
   content: "";
-  background: url("../../static/images/banner01.jpg") repeat-y;
+  background: url("../../assets/images/banner01.jpg") repeat-y;
   background-size: 100%;
   background-position: bottom center;
   position: fixed;

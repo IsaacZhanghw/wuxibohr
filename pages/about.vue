@@ -13,7 +13,7 @@ import BannerBg from '~/components/BannerBg'
 import Partner from '~/components/home/Partner'
 import Main from '~/components/about/Main'
 
-import background from "~/static/images/bannerBg03.jpg";
+import background from "~/assets/images/bannerBg03.jpg";
 
 export default {
   head () {

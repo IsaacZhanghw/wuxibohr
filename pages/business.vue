@@ -16,7 +16,7 @@ import BusinessItem from '~/components/business/BusinessItem'
 import ContactItem from '~/components/contact/ContactItem'
 import WuxiBohr from '~/components/home/WuxiBohr'
 
-import background from "~/static/images/bannerBg02.jpg";
+import background from "~/assets/images/bannerBg02.jpg";
 
 export default {
   head () {

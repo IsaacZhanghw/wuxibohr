@@ -12,7 +12,7 @@
           <p class="text-muted">{{item.p}}</p>
         </div>
         <div class="box">
-          <img :src="require('~/static/images/business' + item.id + '.jpg')">
+          <img :src="require('~/assets/images/business' + item.id + '.jpg')">
         </div>
       </div>
     </div>

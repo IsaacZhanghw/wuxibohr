@@ -7,7 +7,7 @@
     <el-carousel-item v-for="(item, index) in bannerList"
                       :key="index">
       <div class="imgwrapepr">
-        <img :src="require('~/static/images/banner' + item + '.jpg')">
+        <img :src="require('~/assets/images/banner' + item + '.jpg')">
       </div>
     </el-carousel-item>
   </el-carousel>

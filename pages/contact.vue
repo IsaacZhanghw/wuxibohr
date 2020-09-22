@@ -13,7 +13,7 @@ import BannerBg from '~/components/BannerBg'
 import ContactItem from '~/components/contact/ContactItem'
 import location from '~/components/contact/location'
 
-import background from "~/static/images/bannerBg04.jpg";
+import background from "~/assets/images/bannerBg04.jpg";
 
 export default {
   head () {

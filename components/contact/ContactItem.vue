@@ -7,7 +7,7 @@
              v-for="item in contactList"
              :key="item.id">
           <img class="w-100"
-               :src="require('~/static/images/services' + item.id + '.png')">
+               :src="require('~/assets/images/services' + item.id + '.png')">
           <div class="card-body text-center py-5">
             <h5 class="card-title font-weight-bold">{{item.h2}}</h5>
             <p class="card-text"

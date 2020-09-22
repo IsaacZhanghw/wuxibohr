@@ -5,7 +5,7 @@
       <h2 class="text-center">合作伙伴</h2>
       <p class="text-center">很荣幸，能与众多行业优秀客户共同成长</p>
       <div class="row">
-        <img :src="require('~/static/images/partner' + item + '.png')"
+        <img :src="require('~/assets/images/partner' + item + '.png')"
              class="item"
              v-for="item in partnerList"
              :key="item.id" />

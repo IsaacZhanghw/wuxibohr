@@ -20,7 +20,7 @@ import WuxiBohr from '~/components/home/WuxiBohr'
 export default {
   head () {
     return {
-      title: '无锡玻尔金属门窗工程'
+      title: '无锡玻尔 - 玻璃修复专家'
     }
   },
   data () {

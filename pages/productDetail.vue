@@ -30,7 +30,7 @@ import WuxiBohr from '~/components/home/WuxiBohr'
 export default {
   head () {
     return {
-      title: '产品中心 | 无锡玻尔'
+      title: '产品中心 - 无锡玻尔'
     }
   },
   data () {

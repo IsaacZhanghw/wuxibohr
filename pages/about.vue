@@ -18,7 +18,7 @@ import background from "~/assets/images/bannerBg03.jpg";
 export default {
   head () {
     return {
-      title: '关于我们 | 无锡玻尔'
+      title: '关于我们 - 无锡玻尔'
     }
   },
   data () {

@@ -21,7 +21,7 @@ import background from "~/assets/images/bannerBg02.jpg";
 export default {
   head () {
     return {
-      title: '服务支持 | 无锡玻尔'
+      title: '服务支持 - 无锡玻尔'
     }
   },
   data () {

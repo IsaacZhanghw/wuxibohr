@@ -4,12 +4,13 @@
     <div class="container_box">
       <div class="container">
         <div class="box">
-          <img :src="require('~/assets/images/project' + project.id + '.jpg')">
+          <img :alt="project.h1"
+               :src="require('~/assets/images/project' + project.id + '.jpg')">
         </div>
         <div class="container-inner">
-          <h2>
-            <strong>{{project.h2}}</strong>
-          </h2>
+          <h1>
+            <strong>{{project.h1}}</strong>
+          </h1>
           <hr />
           <p v-for="(textItem,
          index) in project.text"
@@ -36,7 +37,7 @@ export default {
     return {
       productList: [{
         id: "01",
-        h2: "汽车展厅钢化玻璃划痕",
+        h1: "汽车展厅钢化玻璃划痕",
         text: [
           "使用可调速角磨机和一号研磨片进行粗磨，注意研磨片要与玻璃贴平，可调速角磨机转速调整在2500到3000转左右；",
           "使用一号研磨片粗磨，无需加水，直接研磨，注意操作时力度适中、平稳有序。非钢化玻璃要控制玻璃温度不能过热，防止炸裂；",
@@ -49,7 +50,7 @@ export default {
       },
       {
         id: "02",
-        h2: "钢化玻璃划痕",
+        h1: "钢化玻璃划痕",
         text: [
           "修复前，属于严重玻璃划痕；",
           "蓝色4英寸研磨片粗磨；",
@@ -61,7 +62,7 @@ export default {
       },
       {
         id: "03",
-        h2: "厨具类钢化玻璃划痕",
+        h1: "厨具类钢化玻璃划痕",
         text: [
           "厨具类钢化玻璃划痕修复为例，深度的钢化玻璃划痕；",
           "通常在室内操作时做好防护，以免玻璃研磨出来的粉尘飘散，也能防止抛光膏飞溅。使用无痕纸胶带或美纹胶带，沿玻璃划痕修复处扩大一圈贴胶带做围堰；",
@@ -73,7 +74,7 @@ export default {
       },
       {
         id: "04",
-        h2: "钢化玻璃电焊烫伤",
+        h1: "钢化玻璃电焊烫伤",
         text: [
           "幕墙玻璃焊点修复；",
           "为了方便修复焊点，将要修复的范围在玻璃背面做上标记；",
@@ -85,7 +86,7 @@ export default {
       },
       {
         id: "05",
-        h2: "门窗玻璃划痕",
+        h1: "门窗玻璃划痕",
         text: [
           "修复前认真检查；",
           "对需要研磨的部位进行标记，属于深度划痕；",
@@ -100,7 +101,7 @@ export default {
       },
       {
         id: "06",
-        h2: "精装房玻璃划痕修",
+        h1: "精装房玻璃划痕修",
         text: [
           "精装房玻璃划痕修复；",
           "划痕属于重度划痕，第一道工序使用绿色研磨片粗磨，所有研磨工序要注意喷水；",
@@ -111,7 +112,7 @@ export default {
       },
       {
         id: "07",
-        h2: "汽车玻璃长条裂痕",
+        h1: "汽车玻璃长条裂痕",
         text: [
           "选择市内施工，或者背阴处，同时加强遮挡；",
           "用指甲检查裂纹位置，清理破损部位；",
@@ -124,7 +125,7 @@ export default {
       },
       {
         id: "08",
-        h2: "玻璃星型裂痕",
+        h1: "玻璃星型裂痕",
         text: [
           "清洁玻璃表层，先用棉签和纸巾将破损点的污染物清除，力度要适中，以免将破损点扩大；",
           "抽真空，将裂痕中的空气抽出；",
@@ -136,7 +137,7 @@ export default {
       },
       {
         id: "09",
-        h2: "玻璃牛眼型裂痕",
+        h1: "玻璃牛眼型裂痕",
         text: [
           "清洁玻璃表层，先用棉签和纸巾将破损点的污染物清除，力度要适中，以免将破损点扩大；",
           "取一个纸杯，倒入少量水，把三个吸盘放入纸杯中，吸盘沾湿后取出吸附在三角架上，然后将三角架的中心孔对准撞击点。注意吸盘的方位，不要让清水流入裂痕中，将吸盘压牢，用来固定注胶头；",
@@ -156,7 +157,7 @@ export default {
       },
       {
         id: "10",
-        h2: "玻璃严重电焊炸伤修复",
+        h1: "玻璃严重电焊炸伤修复",
         text: [
           "精装房玻璃划痕修复；",
           "划痕属于重度划痕，第一道工序使用绿色研磨片粗磨，所有研磨工序要注意喷水；",
@@ -167,7 +168,7 @@ export default {
       }],
       project: {
         id: "00",
-        h2: "无锡玻尔",
+        h1: "无锡玻尔",
         text: [
           "无锡玻尔金属门窗工程有限公司"
         ]
@@ -207,7 +208,7 @@ export default {
   box-sizing: border-box;
 }
 
-.container h2 {
+.container h1 {
   font-size: 1.2rem;
   font-weight: bolder;
   margin-top: 0.83rem;
@@ -238,7 +239,7 @@ export default {
   .container {
     margin-top: 50px;
   }
-  .container h2 {
+  .container h1 {
     margin-top: 0.7rem;
     margin-bottom: 0.7rem;
   }
@@ -247,7 +248,7 @@ export default {
   }
 }
 @media only screen and (max-width: 768px) {
-  .container h2 {
+  .container h1 {
     margin-top: 0.75rem;
     margin-bottom: 0.75rem;
     line-height: 32px;
@@ -268,7 +269,7 @@ export default {
     width: 100%;
     margin-top: 0;
   }
-  .container h2 {
+  .container h1 {
     margin-top: 0.65rem;
     margin-bottom: 0.65rem;
   }

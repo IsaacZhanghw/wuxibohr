@@ -25,7 +25,7 @@ export default {
     return {
       BgObj: {
         id: "03",
-        h2: '无 锡 玻 尔',
+        h1: '无 锡 玻 尔',
         p: '专注玻璃划痕、裂痕修复，玻璃修复专家',
         background: background
       }

@@ -2,7 +2,8 @@
   <div class="container_box_wuxibohr">
     <div class="container">
       <div class="inner">
-        <img class="w-100"
+        <img alt="无锡玻尔金属门窗工程有限公司"
+             class="w-100"
              src="../../assets/images/location.jpg" />
       </div>
     </div>

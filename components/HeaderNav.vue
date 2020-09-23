@@ -6,7 +6,8 @@
         <nuxt-link tag="a"
                    to="/"
                    class="navbar-brand">
-          <img height="32"
+          <img alt="无锡玻尔金属门窗工程有限公司"
+               height="32"
                src="~/static/logo.png" />
         </nuxt-link>
         <a>

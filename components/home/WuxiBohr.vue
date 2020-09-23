@@ -2,10 +2,10 @@
   <div class="container_box_wuxibohr">
     <div class="container">
       <div class="inner">
-        <h2>
+        <h1>
           <strong>无锡玻尔金属门窗工程有限公司<sup>®</sup>
           </strong>
-        </h2>
+        </h1>
         <hr />
         <p>专注于玻璃划痕、裂痕修复，拥有高素质的专业施工人员，提供专业工程服务。玻尔在技术方面经过长期专业施工，结合工业技术进步，已成功形成可以简单、快速、经济、完美修复玻璃材质表面上瑕疵的修复施工方案，并提供完善的玻璃划痕修复施工服务。</p>
         <p>公司在发展的过程中，结合专业知识与市场的反馈，继续改进施工工艺，严格管理，提高服务品质，我们将不断努力，愿为广大朋友提供优质的服务。</p>
@@ -43,12 +43,12 @@ export default {
   width: 85%;
   padding-bottom: 20px;
 }
-.container .inner h2 {
+.container .inner h1 {
   padding: 20px 10px;
   text-align: center;
   font-size: 1rem;
 }
-.container .inner h2 strong {
+.container .inner h1 strong {
   font-size: 1rem;
   font-weight: bold;
 }
@@ -63,7 +63,7 @@ export default {
     margin: 70px 0;
     padding-bottom: 16px;
   }
-  .container .inner h2 {
+  .container .inner h1 {
     padding: 18px 9px;
   }
   .container .inner p {
@@ -76,7 +76,7 @@ export default {
     margin: 60px 0;
     padding-bottom: 14px;
   }
-  .container .inner h2 {
+  .container .inner h1 {
     padding: 16px 8px;
   }
   .container .inner p {
@@ -89,7 +89,7 @@ export default {
     margin: 50px 0;
     padding-bottom: 12px;
   }
-  .container .inner h2 {
+  .container .inner h1 {
     padding: 14px 7px;
   }
   .container .inner p {
@@ -103,10 +103,10 @@ export default {
     margin: 30px 0;
     padding-bottom: 8px;
   }
-  .container .inner h2 {
+  .container .inner h1 {
     padding: 12px 0;
   }
-  .container .inner h2 strong {
+  .container .inner h1 strong {
     font-size: 0.9rem;
   }
   .container .inner p {

@@ -7,9 +7,10 @@
                    :key="item.id"
                    :to="{name: 'productDetail',query: { id: item.id }}"
                    tag="div">
-          <img class="w-100"
+          <img :alt="item.h1"
+               class="w-100"
                :src="require('~/assets/images/project' + item.id + '.jpg')">
-          <h5 class="card-title font-weight-bold">{{item.h2}}</h5>
+          <h5 class="card-title font-weight-bold">{{item.h1}}</h5>
         </nuxt-link>
       </div>
     </div>

@@ -3,10 +3,10 @@
        :style="styleObj">
     <div class="container">
       <div class="inner">
-        <h2 class="divider">
-          {{BgObj.h2}}
+        <h1 class="divider">
+          {{BgObj.h1}}
           <span></span>
-        </h2>
+        </h1>
         <p>{{BgObj.p}}</p>
       </div>
     </div>

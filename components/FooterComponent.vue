@@ -5,7 +5,7 @@
         <div class="container">
           <div class="row">
             <div class="footer_widget footer_widget_contact">
-              <h2 class="footer_widget_title">无锡玻尔金属门窗工程有限公司®</h2>
+              <h1 class="footer_widget_title">无锡玻尔金属门窗工程有限公司®</h1>
               <div class="footer_widget_link">
                 <div class="footer_widget_link_wrap">
                   <ul class="list_unstyled footer_widget_link_list">
@@ -13,7 +13,7 @@
                                :key="item.id"
                                tag="li"
                                :to="{name: 'productDetail',query: { id: item.id }}">
-                      <a href="#">{{item.h2}}</a>
+                      <a href="#">{{item.h1}}</a>
                     </nuxt-link>
                   </ul>
                 </div>
@@ -21,13 +21,15 @@
             </div>
             <div class="footer_widget footer_widget_about">
               <div class="footer_widget_about_logo">
-                <img src="~/assets/images/logo.png" />
+                <img alt="无锡玻尔金属门窗工程有限公司"
+                     src="~/assets/images/logo.png" />
               </div>
               <div class="footer_widget_about_container">
                 <p class="footer_widget_text"
                    v-for="item in aboutList"
                    :key="item.id">
-                  <img height="32"
+                  <img :alt="item.p"
+                       height="32"
                        :src="require('~/assets/images/services' + item.id + '.png')">
                   {{item.p}}
                 </p>
@@ -35,7 +37,8 @@
                   <div class="footer_widget_about_container_QRcode_box"
                        v-for="item in QRcodeList"
                        :key="item.id">
-                    <img height="32"
+                    <img :alt="item.p"
+                         height="32"
                          :src="require('~/assets/images/QRcode' + item.id + '.jpg')">
                     <p class="footer_widget_text">{{item.p}}
                     </p>
@@ -58,7 +61,8 @@
                   data-target="html"
                   class="scroll-to-target site_footer_scroll_top"
                   @click="scrollToTop()">
-              <img height="24"
+              <img alt="无锡玻尔金属门窗工程有限公司"
+                   height="24"
                    src="../assets/images/up.png" />
             </span>
             <p class="site_footer_copy">&copy; Copyright 2020 无锡玻尔金属门窗工程有限公司
@@ -66,7 +70,8 @@
             <p class="site_footer_copy">
               <a href="https://beian.miit.gov.cn/"
                  target="_blank">
-                <img height="12"
+                <img alt="无锡玻尔金属门窗工程有限公司"
+                     height="12"
                      src="../assets/images/beian.png" /> 苏ICP备2020053658号-1</a>
             </p>
             <p class="site_footer_copy">
@@ -89,27 +94,27 @@ export default {
       productList: [
         {
           id: "01",
-          h2: "汽车展厅钢化玻璃划痕"
+          h1: "汽车展厅钢化玻璃划痕"
         },
         {
           id: "02",
-          h2: "钢化玻璃划痕"
+          h1: "钢化玻璃划痕"
         },
         {
           id: "03",
-          h2: "厨具类钢化玻璃划痕"
+          h1: "厨具类钢化玻璃划痕"
         },
         {
           id: "04",
-          h2: "钢化玻璃电焊烫伤"
+          h1: "钢化玻璃电焊烫伤"
         },
         {
           id: "05",
-          h2: "门窗玻璃划痕"
+          h1: "门窗玻璃划痕"
         },
         {
           id: "06",
-          h2: "精装房玻璃划痕修"
+          h1: "精装房玻璃划痕修"
         }
       ],
       aboutList: [
@@ -123,7 +128,7 @@ export default {
         },
         {
           id: "07",
-          p: "522625a00dm.cdb@sina.cn"
+          p: "522625a00dm.cdb艾特sina.cn"
         },
       ],
       QRcodeList: [

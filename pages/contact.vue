@@ -25,25 +25,25 @@ export default {
     return {
       BgObj: {
         id: "04",
-        h2: '联 系 我 们',
+        h1: '联 系 我 们',
         p: '我们珍惜您每一次的联系，冀望将来光辉的前景',
         background: background
       },
       contactList: [
         {
           id: "05",
-          h2: "地址",
+          h1: "地址",
           text: ["无锡市梁溪区江海东路148号-3076"]
         },
         {
           id: "06",
-          h2: "电话",
+          h1: "电话",
           text: ["张先生 153 0056 2173(微信同号)"]
         },
         {
           id: "07",
-          h2: "邮箱",
-          text: ["522625a00dm.cdb@sina.cn"]
+          h1: "邮箱",
+          text: ["522625a00dm.cdb艾特sina.cn"]
         }
       ]
     }

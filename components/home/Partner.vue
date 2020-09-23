@@ -2,10 +2,11 @@
   <div class="container_box"
        :class="{container_box_padding:navindex===0}">
     <div class="container">
-      <h2 class="text-center">合作伙伴</h2>
+      <h1 class="text-center">合作伙伴</h1>
       <p class="text-center">很荣幸，能与众多行业优秀客户共同成长</p>
       <div class="row">
-        <img :src="require('~/assets/images/partner' + item + '.png')"
+        <img alt="无锡玻尔金属门窗工程有限公司"
+             :src="require('~/assets/images/partner' + item + '.png')"
              class="item"
              v-for="item in partnerList"
              :key="item.id" />
@@ -34,7 +35,7 @@ export default {
 .container {
   background: #ffffff;
 }
-.container h2 {
+.container h1 {
   font-weight: 500;
   font-size: 1.6rem;
   padding-top: 30px;
@@ -69,7 +70,7 @@ img {
   box-sizing: border-box;
 }
 @media only screen and (max-width: 992px) {
-  .container h2 {
+  .container h1 {
     padding-top: 26px;
     padding-bottom: 8px;
   }
@@ -79,7 +80,7 @@ img {
   }
 }
 @media only screen and (max-width: 768px) {
-  .container h2 {
+  .container h1 {
     padding-top: 24px;
     padding-bottom: 6px;
   }
@@ -92,7 +93,7 @@ img {
   }
 }
 @media only screen and (max-width: 480px) {
-  .container h2 {
+  .container h1 {
     font-size: 1.2rem;
     padding-top: 24px;
     padding-bottom: 4px;
@@ -106,7 +107,7 @@ img {
     flex-direction: column;
     align-items: center;
   }
-  .container h2 {
+  .container h1 {
     padding-top: 20px;
   }
   .row {

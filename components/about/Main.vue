@@ -2,9 +2,9 @@
   <div class="container_box_wuxibohr">
     <div class="container">
       <div class="container-inner">
-        <h2>
+        <h1>
           <strong>无锡玻尔金属门窗工程有限公司</strong>
-        </h2>
+        </h1>
         <p class="text-muted">成功源于共享，创新成就未来</p>
         <hr />
         <p>
@@ -15,7 +15,8 @@
         </p>
       </div>
       <div class="box">
-        <img :src="wuxibohr" />
+        <img alt="无锡玻尔金属门窗工程有限公司"
+             :src="wuxibohr" />
       </div>
     </div>
   </div>
@@ -56,7 +57,7 @@ export default {
   width: 60%;
   box-sizing: border-box;
 }
-.container h2 strong {
+.container h1 strong {
   display: inline-block;
   font-size: 1.4rem;
   font-weight: bolder;
@@ -88,7 +89,7 @@ export default {
   .container {
     margin: 36px auto;
   }
-  .container h2 strong {
+  .container h1 strong {
     margin-top: 0.75rem;
     margin-bottom: 0.75rem;
   }
@@ -100,7 +101,7 @@ export default {
   .container {
     margin: 32px auto;
   }
-  .container h2 strong {
+  .container h1 strong {
     margin-top: 0.7rem;
     margin-bottom: 0.7rem;
     line-height: 32px;
@@ -123,7 +124,7 @@ export default {
     width: 100%;
     margin-top: 0;
   }
-  .container h2 strong {
+  .container h1 strong {
     margin-top: 0.65rem;
     margin-bottom: 0.65rem;
   }

@@ -16,6 +16,10 @@ export default {
       { rel: 'stylesheet', href: '/global.css' },
       { rel: 'icon', sizes: 'any', href: '/favicon.ico' }
     ],
+    script: [
+      // { type: "text/javascript", charset: "utf-8", src: "http://push.zhanzhang.baidu.com/push.js" },// 百度自动收录
+      // { type: "text/javascript", charset: "utf-8", src: "https://s.ssl.qhres.com/ssl/ab77b6ea7f3fbf79.js", id: "sozz" }// 360自动收录
+    ]
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)

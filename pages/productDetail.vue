@@ -180,7 +180,7 @@ export default {
     WuxiBohr
   },
   mounted () {
-    if (this.$route.query.id === undefined) {
+    if (isNaN(this.$route.query.id) || this.$route.query.id === '') {
       this.$router.push('/');
       return;
     }

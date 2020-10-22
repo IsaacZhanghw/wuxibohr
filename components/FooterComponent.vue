@@ -33,7 +33,8 @@
                        :src="require('~/assets/images/services' + item.id + '.png')">
                   {{item.p}}
                 </p>
-                <div class="footer_widget_about_container_QRcode">
+                <div class="footer_widget_about_container_QRcode"
+                     v-if="!isMini">
                   <div class="footer_widget_about_container_QRcode_box"
                        v-for="item in QRcodeList"
                        :key="item.id">
@@ -140,7 +141,13 @@ export default {
           id: "02",
           p: "张洪成"
         }
-      ]
+      ],
+      isMini: false
+    }
+  },
+  mounted () {
+    if (this.$route.query.program === "isMini") {
+      this.isMini = true;
     }
   },
   methods: {

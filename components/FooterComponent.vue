@@ -32,6 +32,7 @@
                        height="32"
                        :src="require('~/assets/images/services' + item.id + '.png')">
                   {{item.p}}
+                  <span v-if="!isMini && item.id === '06'">(微信同号)</span>
                 </p>
                 <div class="footer_widget_about_container_QRcode"
                      v-if="!isMini">
@@ -125,7 +126,7 @@ export default {
         },
         {
           id: "06",
-          p: "张先生 153 0056 2173(微信同号)"
+          p: "张先生 153 0056 2173"
         },
         {
           id: "07",

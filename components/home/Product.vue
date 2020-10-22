@@ -98,7 +98,7 @@ img {
   }
 }
 @media only screen and (max-width: 320px) {
-  .card-deck[data-v-a2b46a4c] {
+  .card-deck {
     flex-direction: column;
     align-items: center;
   }

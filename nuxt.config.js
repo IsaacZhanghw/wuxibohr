@@ -20,7 +20,7 @@ export default {
       { rel: 'icon', sizes: 'any', href: '/favicon.ico' }
     ],
     script: [
-      { type: "text/javascript", charset: "utf-8", src: "https://zz.bdstatic.com/linksubmit/push.js" },// 百度自动收录
+      { type: "text/javascript", charset: "utf-8", src: "https://zz.bdstatic.com/linksubmit/push.js" }// 百度自动收录
       // { type: "text/javascript", charset: "utf-8", src: "https://s.ssl.qhres.com/ssl/ab77b6ea7f3fbf79.js", id: "sozz" }// 360自动收录
     ]
   },
